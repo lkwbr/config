@@ -1,0 +1,44 @@
+{
+    "workbench.colorTheme": "White",
+    "debug.console.fontSize": 10,
+    "editor.fontSize": 10,
+    "python.pythonPath": "/usr/local/bin/python3",
+    // Language-specific styling
+    "[python]": {
+        "editor.rulers": [
+            72,
+            79
+        ],
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "[javascript]": {
+        "editor.rulers": [
+            80
+        ]
+    },
+    "[javascriptreact]": {
+        "editor.rulers": [
+            80,
+            100
+        ]
+    },
+    "terminal.integrated.fontSize": 10,
+    "terminal.integrated.lineHeight": 0,
+    "markdown.preview.fontSize": 10,
+    "vim.easymotionMarkerFontSize": "10",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "window.zoomLevel": 0,
+    "editor.detectIndentation": false,
+    "nightswitch.dayTheme": "White",
+    "nightswitch.nightTheme": "White Night",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "editor.fontFamily": "Hack",
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontFamily": "Hack",
+    "aws.samcli.location": "/usr/local/bin/sam",
+    "nightswitch.geolocation": true,
+    "editor.suggestSelection": "first",
+    "python.jediEnabled": false,
+    "aws.profile": "profile:default"
+}
