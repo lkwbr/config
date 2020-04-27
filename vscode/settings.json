@@ -1,13 +1,38 @@
 {
+    // Theme & high-level
     "workbench.colorTheme": "White",
-    "debug.console.fontSize": 10,
+    "window.zoomLevel": 0,
+    "editor.suggestSelection": "first",
+    "editor.detectIndentation": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+
+    // Font
+    "editor.fontFamily": "Hack",
     "editor.fontSize": 10,
+    "editor.fontLigatures": true,
+    "debug.console.fontSize": 10,
+    "terminal.integrated.fontSize": 10,
+    "terminal.integrated.lineHeight": 0,
+    "terminal.integrated.fontFamily": "Hack",
+
+    // Vim
+    "vim.easymotionMarkerFontSize": "10",
+    // Prevent Vim from intercepting Zen mode shortcut
+    "vim.handleKeys": {
+        "<C-k>": false
+    },
+
+    // Language-specific
+    "markdown.preview.fontSize": 10,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "python.linting.enabled": true,
     "python.pythonPath": "/usr/local/bin/python3",
-    // Language-specific styling
+    "python.jediEnabled": false,
     "[python]": {
         "editor.rulers": [
-            72,
-            79
+            79,
+            79,
         ],
         "editor.defaultFormatter": "ms-python.python"
     },
@@ -22,23 +47,12 @@
             100
         ]
     },
-    "terminal.integrated.fontSize": 10,
-    "terminal.integrated.lineHeight": 0,
-    "markdown.preview.fontSize": 10,
-    "vim.easymotionMarkerFontSize": "10",
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "window.zoomLevel": 0,
-    "editor.detectIndentation": false,
+    "[git-commit]": {"editor.rulers": [50]},
+
+    // Plugin
+    "nightswitch.geolocation": true,
     "nightswitch.dayTheme": "White",
     "nightswitch.nightTheme": "White Night",
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "editor.fontFamily": "Hack",
-    "editor.fontLigatures": true,
-    "terminal.integrated.fontFamily": "Hack",
+    "aws.profile": "profile:default",
     "aws.samcli.location": "/usr/local/bin/sam",
-    "nightswitch.geolocation": true,
-    "editor.suggestSelection": "first",
-    "python.jediEnabled": false,
-    "aws.profile": "profile:default"
 }
