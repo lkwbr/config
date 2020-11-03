@@ -51,7 +51,8 @@ module.exports = {
     //selectionColor: 'rgba(248,28,229,0.3)',
 
     // border color (window, tabs)
-    borderColor: '#fff',
+    //borderColor: '#000',
+    //borderColor: '#fff',
 
     // custom CSS to embed in the main window
     css: '',
@@ -82,7 +83,8 @@ module.exports = {
       blue: '#0A2FC4',
       magenta: '#C839C5',
       cyan: '#20C5C6',
-      white: '#C7C7C7',
+      //white: '#C7C7C7',
+      white: '#ffffff',
       lightBlack: '#686868',
       lightRed: '#FD6F6B',
       lightGreen: '#67F86F',
@@ -149,18 +151,26 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-   //"hyperterm-spacegray"
-   //"hyper-sierra-vibrancy"
+   //"hyperterm-spacegray",
+   "hyper-sierra-vibrancy",
    // "hyperpunk"
    //'hyper-altair'
    //'hyper-chesterish'
-   'hyper-flat',
-   //"shades-of-purple-hyper"
+   //'hyper-flat',
+   //"shades-of-purple-hyper",
    //"hyper-cyberpunk"
    //'hyper-material-theme'
    //'hyper-material', 
    //'hyper-simple-vibrancy',
-   'hyper-final-say'
+   //'hyper-white-theme',
+   
+   //"hyper-polarbear",
+   
+   'hyperminimal',
+   
+   //'hyperborder',
+   
+   //'hyper-final-say'
   ],
   
 
