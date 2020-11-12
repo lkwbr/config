@@ -1,7 +1,20 @@
 #!/bin/bash
+# Install baseline coding environment for Ubuntu (20+).
+sudo apt -y update
 sudo apt install -y zsh
 # TODO:  Install hyper and edit .hyper.js config.
+cd ~/Downloads
+wget https://releases.hyper.is/download/deb
+sudo apt install ./hyper_*_amd64.deb
+cd ~
+mkdir Workspace
+git clone https://github.com/lkgwbr/config.git
+ln -s ~/config/.hyper.js ~/.hyper.js
 # TODO:  Update .zshrc and snag ~/bin scripts.
-# TODO:  Install tmux, vim, and vscode (with settings.json).
+# Install tmux, vim, and vscode (with settings.json).
+sudo apt install -y tmux vim
+sudo snap install --classic code
+# cp ~/config/settings.json ...
 # Install Hack font.
 sudo apt install -y fonts-hack-ttf
+# TODO:  Omic installation scripts (requiring authentication).
