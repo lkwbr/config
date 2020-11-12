@@ -11,7 +11,7 @@ mkdir Workspace
 git clone https://github.com/lkgwbr/config.git
 ln -s ~/config/.hyper.js ~/.hyper.js
 # TODO:  Update .zshrc and snag ~/bin scripts.
-# Install tmux, vim, and vscode (with settings.json).
+# Install tmux, vim (with .vimrc), and vscode (with settings.json).
 sudo apt install -y tmux vim
 sudo snap install --classic code
 # cp ~/config/settings.json ...
