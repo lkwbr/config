@@ -2,3 +2,4 @@
 sudo apt install -y zsh
 # TODO:  Install hyper and edit .hyper.js config.
 # TODO:  Update .zshrc and snag ~/bin scripts.
+# TODO:  Install tmux, vim, and vscode (with settings.json).
