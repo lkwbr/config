@@ -1,7 +1,17 @@
 #!/bin/bash
-# Install baseline coding environment for Ubuntu (20+).
+#
+# Install baseline coding environment for Ubuntu (20+). Kinda/sorta spec-ing out my preferred
+# containerized environment.
+
 sudo apt -y update
+# Grab Zsh shell
 sudo apt install -y zsh
+# Install most recent Python and Node runtimes.
+sudo apt install -y python3 python3-pip
+sudo apt install -y nodejs npm
+# TODO:  Install common global Python and Node packages
+# python3 -m pip install -r requirments.txt --user
+# npm i index.json
 # TODO:  Install hyper and edit .hyper.js config.
 cd ~/Downloads
 wget https://releases.hyper.is/download/deb
