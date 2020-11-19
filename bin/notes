@@ -1,0 +1,7 @@
+#!/bin/bash
+#
+# Jot it down 
+cd ~/Documents/notes
+dt=$(date '+%Y_%m_%d')
+vim $dt.md
+exec $SHELL

@@ -1,0 +1,5 @@
+#!/bin/bash
+#
+# Quit slackin' off
+cd ~/Workspace/omic/code/closed
+exec $SHELL
