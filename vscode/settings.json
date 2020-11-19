@@ -1,18 +1,19 @@
 {
     // Theme & high-level
-    "workbench.colorTheme": "White",
+    "workbench.colorTheme": "Ayu Mirage",
     "window.zoomLevel": 0,
     "editor.suggestSelection": "first",
     "editor.detectIndentation": false,
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
+    "window.titleBarStyle": "custom",
 
     // Font
     "editor.fontFamily": "Hack",
-    "editor.fontSize": 10,
+    "editor.fontSize": 13,
     "editor.fontLigatures": true,
-    "debug.console.fontSize": 10,
-    "terminal.integrated.fontSize": 10,
+    "debug.console.fontSize": 13,
+    "terminal.integrated.fontSize": 13,
     "terminal.integrated.lineHeight": 0,
     "terminal.integrated.fontFamily": "Hack",
 
@@ -24,10 +25,12 @@
     },
 
     // Language-specific
-    "markdown.preview.fontSize": 10,
+    "markdown.preview.fontSize": 13,
     "javascript.updateImportsOnFileMove.enabled": "always",
     "python.linting.enabled": true,
-    "python.pythonPath": "/usr/local/bin/python3",
+    "python.pythonPath": "/home/linuxbrew/.linuxbrew/bin/python3",
+    "python.languageServer": "Pylance",
+    "python.dataScience.askForKernelRestart": false,
     "python.jediEnabled": false,
     "[python]": {
         "editor.rulers": [
@@ -50,9 +53,14 @@
     "[git-commit]": {"editor.rulers": [50]},
 
     // Plugin
+	/*
     "nightswitch.geolocation": true,
     "nightswitch.dayTheme": "White",
     "nightswitch.nightTheme": "White Night",
+	*/
     "aws.profile": "profile:default",
     "aws.samcli.location": "/usr/local/bin/sam",
+    "editor.largeFileOptimizations": false,
+    "python.dataScience.alwaysTrustNotebooks": true,
+    "terminal.integrated.shell.linux": "/bin/zsh",
 }
