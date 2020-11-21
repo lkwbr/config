@@ -32,3 +32,7 @@ sudo apt install -y fonts-hack-ttf
 
 # TODO: Loop all configs/rcs in the repo through this:  
 # ln -s ~/Workspace/me/config/.zshrc
+
+# Ubuntu:  Hide default desktop folders.
+gsettings set org.gnome.shell.extensions.desktop-icons show-home false
+gsettings set org.gnome.shell.extensions.desktop-icons show-trash false
