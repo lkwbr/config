@@ -28,3 +28,7 @@ sudo snap install --classic code
 # Install Hack font.
 sudo apt install -y fonts-hack-ttf
 # TODO:  Omic installation scripts (requiring authentication).
+
+
+# TODO: Loop all configs/rcs in the repo through this:  
+# ln -s ~/Workspace/me/config/.zshrc
