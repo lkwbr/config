@@ -1,0 +1,4 @@
+#!/bin/bash
+# Luke Weber
+
+sudo dhcpcd enp0s20u2

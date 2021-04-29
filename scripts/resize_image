@@ -1,0 +1,39 @@
+#!/usr/bin/env python
+# Luke Weber, 02/03/2017
+# Resizes square images, namely logos
+
+import os, sys
+import PIL.Image as Image
+
+# Incorrect use: show usage 
+if len(sys.argv) < 3: 
+    this_script = os.path.basename(__file__)
+    print("Usage:", "'" + this_script, "image_file", "dimen_1",
+            "[dimen_2]", "[...]'")
+    print("Please write each dimension as one number (e.g. 128", 
+            "for a file of size 128x128 px)")
+    exit()
+
+# Grab arguments
+infile = sys.argv[1]
+outdimens = sys.argv[2:]
+
+# Start processing
+try:
+    file_base = os.path.splitext(infile)[0]
+
+    print("Creating new file dimensions:")
+    for dimen in outdimens:
+        im = Image.open(infile)
+        outfile = file_base + "_" + dimen + "." + im.format.lower()
+
+        size = int(dimen), int(dimen) # px, square
+        im.thumbnail(size, Image.ANTIALIAS)
+        im.save(outfile, im.format)
+
+        print("\t..." + outfile) 
+
+    print("Successfully created", len(outdimens), "file(s)!")
+
+except IOError:
+    print("Error: image_file is not a valid or supported image")

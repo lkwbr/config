@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Attempt home connection
+netctl start wlp3s0-WeberWirelessWorld &

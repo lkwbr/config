@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Extend the size of /tmp (forcefully!)
+
+echo "Resizing /tmp to " $1 " bytes..."
+
+sudo umount /tmp
+sudo mount -lt tmpfs -o size=$1,mode=1777 overflow /tmp
+
+echo "Done!" 

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+DB=/usr/local/pgsql/data
+
+echo "Switching to user postgres..."
+su postgres
+
+echo "Creating database cluster at " $DB "..."
+initdb -D $DB 
+
+echo "Starting server..."
+pg_ctl -D $DB start
+
+echo "Server started"

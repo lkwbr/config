@@ -1,0 +1,3 @@
+# Run studio; no hangup
+/usr/local/android-studio-2.1/bin/studio.sh
+disown

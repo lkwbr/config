@@ -1,0 +1,7 @@
+#!/bin/bash
+
+DAY_EXPIRATION=$1
+
+# Clean all file and folders older than the set day on /tmp
+# NOTE: /tmp already gets wiped on each restart
+sudo find /tmp -ctime +$DAY_EXPIRATION -exec rm -rf {} +

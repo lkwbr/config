@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+# Author: Logan Weber
+# Source: https://github.com/dooblad/Arch-Scripts/blob/master/wifi 
+
+# Strip off selection asterisk and whitespace (WiFi profiles shouldn't have
+# internal spaces)
+POINTS="$(netctl list | sed 's/[\* ]//g')"
+
+# Extract the second field of the string with format:
+#     "* <WiFi profile name>"
+CURRENT="$(netctl list | grep '*' | cut --delimiter=" " --fields=2)"
+
+select ACCESS_POINT in $POINTS; do
+    # Stop the current one
+    if [[ "$CURRENT" != "" ]]; then
+        sudo netctl stop "$CURRENT"
+    fi
+
+    # Connect to the chosen one
+    sudo netctl start "$ACCESS_POINT"
+    exit 0
+done
+

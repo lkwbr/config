@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Turn Python source code into PDF file
+# By Luke Weber
+
+vim $1 -c ":hardcopy > $1.ps" -c ":set number" -c ":q"
+rm $1.pdf # Remove past pdf
+ps2pdf $1.ps $1.pdf
+rm $1.ps  # Remove intermediate PostScript file
+
+echo "Success: turned Python file $1 into $1.pdf!"
